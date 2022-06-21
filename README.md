@@ -1,3 +1,11 @@
+# TRTC Web SDK 集成 SIPx 示例
+
+这个程序来自于腾讯云官方的例子 <https://github.com/LiteAVSDK/TRTC_Web/tree/main/base-js>，略做修改，以集成 SIPx。
+
+以下是腾讯云的 <https://github.com/LiteAVSDK/TRTC_Web> README 内容：
+
+---
+
 # 腾讯云实时音视频 TRTC SDK
 
 ## 产品介绍
@@ -50,7 +58,6 @@
 - 运行：运行 TRTC Web 快速运行 Demo (Vue2 版本) 请参考 [运行 TRTC Web 快速运行 Demo (Vue2 版本)](https://github.com/LiteAVSDK/TRTC_Web/tree/main/quick-demo-vue2-js)。
 - 在线体验：[TRTC Web quick Demo (Vue2 版本) 在线体验](https://web.sdk.qcloud.com/trtc/webrtc/demo/quick-demo-vue2-js/index.html)。
 
-
 ## 联系我们
 
 - 如果你遇到了困难，可以先参阅 [常见问题](https://cloud.tencent.com/document/product/647/43018)；
@@ -58,4 +65,3 @@
 - 完整的 API 文档见 [SDK 的 API 文档](https://web.sdk.qcloud.com/trtc/webrtc/doc/zh-cn/index.html)；
 - 如果需要售后技术支持, 你可以点击[这里](https://cloud.tencent.com/document/product/647/19906)；
 - 如果发现了示例代码的 bug，欢迎提交 issue；
-
