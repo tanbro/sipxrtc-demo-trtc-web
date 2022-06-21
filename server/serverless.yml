@@ -1,0 +1,42 @@
+# 腾讯云 scf web 应用
+# ref: https://registry.serverless.com/package/scf
+
+component: scf # (必填) 引用 component 的名称，当前用到的是 tencent-scf 组件
+name: server # (必填) 创建的实例名称，请修改成您的实例名称
+# stage: prod # (可选) 用于区分环境信息，默认值是 dev
+
+#组件参数
+inputs:
+  name: ${app} #函数名称
+  src:
+    src: ./
+    hook: sh ./scripts/make-scf2.sh
+    dist: ./dist/scf
+    exclude:
+      - /bin/
+      - /Scripts/
+      - /include/
+  region: ap-guangzhou # 云函数所在区域
+  type: web # 部署Web函数时需指定该值
+  runtime: Python3.7 # 云函数运行时的环境
+  description: SIPx TRTC web demo server
+  environment: #  环境变量
+    variables: #  环境变量对象
+      TZ: Asia/Shanghai
+  events: # 触发器
+    - apigw: # 网关触发器
+        parameters:
+          # 注意不要随便修改 serviceId，否则域名会变化
+          # 如果不指定 serviceId，腾讯云的 Serverless 工具会自动新建一个，域名也会变化
+          serviceId: service-85qcuw0w
+          serviceName: sipx_sls_api
+          description: the serverless service for sipx
+          protocols:
+            - http
+            - https
+          endpoints:
+            - path: /trtc/web/
+              apiId: api-nwb98h7u
+              apiName: trtc_web
+              description: TRTC Web Demo
+              method: ANY

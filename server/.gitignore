@@ -1,0 +1,4 @@
+.flaskenv
+config.py
+config.*.py
+!config.example.py
