@@ -39,15 +39,6 @@ if app.config.get('CORS_ENABLED'):
     CORS(app)
 
 
-# 用它覆盖 `url_for`
-# @app.endpoint('static')
-# def static_endpoint(filename):
-#     static_base_url = app.config.get('APP_STATIC_BASE_URL')
-#     if static_base_url:
-#         return redirect(urljoin(static_base_url, filename))
-#     return app.send_static_file(filename)
-
-
 # 自定义用于模板中的 static 过滤函数，计算 static 地址
 @app.template_filter(name='static')
 def static_filter(filename):
@@ -60,7 +51,7 @@ def static_filter(filename):
 
 # 动态请求不再模板中，无法提前计算 static 地址，用这个 viewer 进行 redirect
 @app.route('/<regex("(js|img|css|data)/(.+)"):filename>')
-def serve_static(filename):
+def static_view(filename):
     static_base_url = app.config.get('APP_STATIC_BASE_URL')
     if static_base_url:
         return redirect(urljoin(static_base_url, filename))
