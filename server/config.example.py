@@ -3,6 +3,9 @@
 ################
 # Flask Session's cookie secret key
 # SECRET_KEY = 'xxxx'
+# 实际部署时，由于各种服务/代理/网关等的前缀地址，可能需要设置这几个 FLASK 参数
+# APPLICATION_ROOT = '/trtc/web'
+# SESSION_COOKIE_PATH = '/release/trtc/web'
 
 #####################
 # Flask-CORS config #
