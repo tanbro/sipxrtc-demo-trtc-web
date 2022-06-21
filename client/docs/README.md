@@ -23,7 +23,7 @@
 
 ## 开始体验
 
-- 👉 [**点击这里**](https://demo.sipx.cn/trtc/web/) 开始体验
+- 👉 [**点击这里**](https://demo.sipx.cn/release/trtc/web/) 开始体验
 
 [sip]: https://datatracker.ietf.org/doc/html/rfc3261 "SIP: Session Initiation Protocol"
 [sipx]: http://sipx.cn/ "实现互联网实时音视频和 SIP 话路的互联互通。"
