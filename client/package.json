@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "serve": "http-server -c-1 --port 8082",
-    "build": "sh scripts/build.sh",
-    "deploy": "npx serverless deploy",
+    "build": "bash scripts/build.sh",
+    "deploy": "SERVERLESS_PLATFORM_VENDOR=tencent npx serverless deploy",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
   },
@@ -14,7 +14,6 @@
   "license": "ISC",
   "devDependencies": {
     "http-server": "^14.1.0",
-    "serverless": "^3.19.0",
     "vuepress": "^1.9.7"
   }
 }
