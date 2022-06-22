@@ -6,7 +6,7 @@
   "scripts": {
     "develop": "http-server -c-1 --port 8082 --cors -P http://localhost:8081 -o",
     "serve": "http-server -c-1 --port 8082 --cors",
-    "serverless:build": "bash scripts/build.sh",
+    "serverless:build": "bash scripts/build-serverless.sh",
     "serverless:deploy": "SERVERLESS_PLATFORM_VENDOR=tencent npx serverless deploy",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"
