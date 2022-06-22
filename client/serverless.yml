@@ -11,5 +11,7 @@ inputs:
     dist: dist
     hook: npm run build
     websitePath: demo/trtc/web/
+  env: # 配置前端环境变量
+    API_URL: https://demo.sipx.cn/trtc/web
   region: ap-guangzhou
   bucket: sipx-site-1310945165

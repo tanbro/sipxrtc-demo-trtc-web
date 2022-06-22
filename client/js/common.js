@@ -55,7 +55,7 @@ function login() {
   ///
   const btn = $("#login-btn");
   if (btn.hasClass("disabled")) return;
-  const url = `${SERVER_URL}/enter_room`;
+  const url = `${window.env.API_URL}/enter_room`;
   const data = {
     smsCode: $("#smsCode").val(),
   };
@@ -124,7 +124,7 @@ function join() {
    *
    * 调用 make_call
    */
-  const url = `${SERVER_URL}/make_call`;
+  const url = `${window.env.API_URL}/make_call`;
   console.log("启动电话呼叫...");
   fetch(url, {
     method: "POST",
@@ -277,7 +277,7 @@ function setBtnClickFuc() {
      * 调用 make_call
      */
     /// 通知服务器 exit room
-    const url = `${SERVER_URL}/exit_room`;
+    const url = `${window.env.API_URL}/exit_room`;
     fetch(url, {
       method: "POST",
       mode: "cors",
@@ -334,7 +334,7 @@ function setBtnClickFuc() {
       return;
     }
     const origTxt = btn.val();
-    const url = `${SERVER_URL}/sms_code`;
+    const url = `${window.env.API_URL}/sms_code`;
     phoneNumber = $("#phoneNumber").val();
     const data = {
       phoneNumber: phoneNumber,

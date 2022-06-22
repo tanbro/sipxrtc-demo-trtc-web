@@ -515,9 +515,7 @@
                 $('body').bootstrapMaterialDesign();
             });
         </script>
-        <script type="application/javascript">
-            SERVER_URL = "{{ server_url }}";
-        </script>
+        <script src="{{ 'env.js' | static }}"></script>
         <script src="{{ './js/lib-generate-test-usersig.min.js' | static }}"></script>
         <script src="{{ './js/debug/GenerateTestUserSig.js' | static }}"></script>
         <script src="{{ './js/iconfont.js' | static }}"></script>

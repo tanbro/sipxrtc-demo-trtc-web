@@ -24,7 +24,7 @@ def hello():
 
 @current_app.route('/')
 def index():
-    return render_template('index.html', server_url=current_app.config['APP_SERVER_URL'])
+    return render_template('index.html')
 
 
 @current_app.route('/sms_code', methods=['POST'])
