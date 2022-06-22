@@ -9,7 +9,7 @@ inputs:
   src:
     src: .
     dist: dist
-    hook: npm run build
+    hook: npm run serverless:build
     websitePath: demo/trtc/web/
   region: ap-guangzhou
   bucket: sipx-site-1310945165
