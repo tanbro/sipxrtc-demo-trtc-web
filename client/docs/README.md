@@ -25,6 +25,10 @@
 
 - 👉 [**点击这里**](https://demo.sipx.cn/release/trtc/web/) 开始体验
 
+> ❗ **注意**:
+>
+> 这个演示程序需要使用 `JavaScript` 与 `Cookie` ，请注意浏览器设置允许！
+
 [sip]: https://datatracker.ietf.org/doc/html/rfc3261 "SIP: Session Initiation Protocol"
 [sipx]: http://sipx.cn/ "实现互联网实时音视频和 SIP 话路的互联互通。"
 [TRTC]: https://cloud.tencent.com/document/product/647/16788 "腾讯实时音视频（Tencent Real-Time Communication）"
