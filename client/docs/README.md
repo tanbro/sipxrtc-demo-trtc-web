@@ -27,7 +27,9 @@
 
 > ❗ **注意**:
 >
-> 这个演示程序需要使用 `JavaScript` 与 `Cookie` ，请注意浏览器设置允许！
+> - 这个演示程序需要使用 `JavaScript` 与 `Cookie`，请注意浏览器设置。
+> - 计算机应配有：麦克风，头戴式耳机(不推荐使用外放音源，以防回声噪音)。进房之前请确认页面允许使用摄像头和麦克风。
+> - 开始使用前，应点击“设备检测”，确保浏览器的支持与兼容。
 
 [sip]: https://datatracker.ietf.org/doc/html/rfc3261 "SIP: Session Initiation Protocol"
 [sipx]: http://sipx.cn/ "实现互联网实时音视频和 SIP 话路的互联互通。"
