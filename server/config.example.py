@@ -36,8 +36,6 @@ APP_STATIC_FOLDER = '../client'
 # 部署后，可以用静态的 URL 作为 static 路径
 # APP_STATIC_BASE_URL = 'http://localhost:8082/'
 
-# Web 服务的 Base URL
-APP_SERVER_URL = 'http://localhost:8081'
 # Web 服务的公网 Base URL
 # APP_SERVER_PUBLIC_URL = 'http://localhost:8081'
 
