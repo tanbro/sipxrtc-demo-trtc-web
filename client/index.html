@@ -13,10 +13,10 @@
 
 <body>
     <div class="weixin-tip" id="JweixinTip">
-		<p>
-			<img src="./img/live_weixin.png" alt="微信打开"/>
-		</p>
-	</div>
+        <p>
+            <img src="{{ './img/live_weixin.png' | static }}" alt="微信打开" />
+        </p>
+    </div>
     <div id="root">
         <!-- 登录页面 -->
         <div id="login-root">
@@ -537,7 +537,7 @@
             function loadHtml() {
                 var div = document.createElement('div');
                 div.id = 'weixin-tip';
-                div.innerHTML = '<p><img src="./img/live_weixin.png" alt="微信打开"/></p>';
+                div.innerHTML = '<p><img src="{{ \'./img/live_weixin.png\' | static }}" alt="微信打开"/></p>';
                 document.body.appendChild(div);
             }
 
